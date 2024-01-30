@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;600&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='/assets/style-jyoub9Yg.css' type='text/css' media='all' />
+        <title>OSD tools</title>
+		<script type="module" crossorigin src="/assets/index-JFU72vRw.js"></script>
+	</head>
+	<body>
+        <header class="app__header">
+            <div class="app__header-text">OSD tools</div>
+            <div class="app__wrapper"></div>
+            <div class="header__button header__button_connect" id="connect"></div>
+        </header>
+		<div class="app">
+            <aside class="app__aside">
+                <div class="uikit__card">
+                    <div class="uikit__card-header">Hardware</div>
+                    <div class="uikit__form">
+                        <label class="uikit__label">Video System</label>
+                        <select class="uikit__input" id="hw"></select>
+                    </div>
+                </div>
+                <div class="uikit__card">
+                    <div class="uikit__card-header">Font selector</div>
+                    <div class="uikit__form">
+                        <label class="uikit__label">Flight Controller software</label>
+                        <select class="uikit__input" id="sw"></select>
+                        <label class="uikit__label">Font <span id="info"></span></label>
+                        <select class="uikit__input" id="font"></select>
+                        <!--<input class="uikit__button" type="button" value="Add font to library">-->
+                    </div>
+                </div>
+                <div class="uikit__card">
+                    <div class="uikit__card-header">Font properties</div>
+                    <div class="uikit__form">
+                        <div class="uikit__radiogroup" id="colors"></div>
+                        <div class="uikit__radiogroup" id="pages"></div>
+                    </div>
+                </div>
+                <!--<div class="uikit__card">
+                    <div class="uikit__form">
+                        <div class="uikit__form-header">Font library</div>
+                    </div>
+                    <div class="uikit__card-button">Download</div>
+                </div>-->
+            </aside>
+            <div class="app__display" id="display"></div>
+            <aside class="app__aside">
+                <div class="uikit__card">
+                    <div class="uikit__card-header">Custom text</div>
+                    <div class="uikit__form">
+                        <label class="uikit__label">Chars</label>
+                        <input id="inp_text" placeholder="65, 45, 20">
+                        <input class="uikit__button" id="btn_add_string" type="button" value="Draw chars">
+                        <input class="uikit__button" id="btn_clear" type="button" value="Clear screen">
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <footer class="app__footer">
+            <div class="footer__text">
+                <a href="https://dronecontrol.ru">DroneControl</a> by <a href="https://github.com/r1000ru">r1000ru</a>
+            </div>
+            <div class="app__wrapper"></div>
+            <div class="footer__text footer__text_warning" id="warning"></div>
+        </footer>
+</body>
+</html>

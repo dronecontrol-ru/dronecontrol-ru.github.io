@@ -1,0 +1,199 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Jura, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background: rgb(51, 57, 71);
+}
+.app {
+    display: flex;
+    flex: 1 1 0%;
+}
+.app__header {
+    display: flex;
+    height: 48px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 5;
+    background: linear-gradient(to right bottom, rgb(54, 60, 74), rgb(39, 40, 44));
+}
+
+.app__header-text {
+    color: white;
+    margin: auto 0px auto 15px;
+}
+
+
+
+.header__button {
+    width: 48px;
+    height: 48px;
+    mask-size: 32px 32px;
+    mask-repeat: no-repeat;
+    cursor: pointer;
+    background: rgb(166, 175, 190);
+    mask-position: center center;
+    border-width: 0px;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.2s linear 0s;
+}
+.header__button_connect {
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='48' width='48'%3E%3Cpath d='M9.5 42q-.65 0-1.075-.425Q8 41.15 8 40.5V38H6v-7.5q0-.65.425-1.075Q6.85 29 7.5 29H10V13.5q0-3.2 2.35-5.35Q14.7 6 18 6q3.15 0 5.325 2.175Q25.5 10.35 25.5 13.5v21q0 1.9 1.3 3.2Q28.1 39 30 39q2.05 0 3.525-1.275T35 34.5V19h-2.5q-.65 0-1.075-.425Q31 18.15 31 17.5V10h2V7.5q0-.65.425-1.075Q33.85 6 34.5 6h4q.65 0 1.075.425Q40 6.85 40 7.5V10h2v7.5q0 .65-.425 1.075Q41.15 19 40.5 19H38v15.5q0 3.2-2.35 5.35Q33.3 42 30 42q-3.15 0-5.325-2.175Q22.5 37.65 22.5 34.5v-21q0-1.9-1.3-3.2Q19.9 9 18 9q-2.05 0-3.525 1.275T13 13.5V29h2.5q.65 0 1.075.425Q17 29.85 17 30.5V38h-2v2.5q0 .65-.425 1.075Q14.15 42 13.5 42Z' fill='%23FFF'/%3E%3C/svg%3E");
+}
+
+.header__button_disconnect {
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='48' width='48'%3E%3Cpath d='m16.5 33.6 7.5-7.5 7.5 7.5 2.1-2.1-7.5-7.5 7.5-7.5-2.1-2.1-7.5 7.5-7.5-7.5-2.1 2.1 7.5 7.5-7.5 7.5ZM24 44q-4.1 0-7.75-1.575-3.65-1.575-6.375-4.3-2.725-2.725-4.3-6.375Q4 28.1 4 24q0-4.15 1.575-7.8 1.575-3.65 4.3-6.35 2.725-2.7 6.375-4.275Q19.9 4 24 4q4.15 0 7.8 1.575 3.65 1.575 6.35 4.275 2.7 2.7 4.275 6.35Q44 19.85 44 24q0 4.1-1.575 7.75-1.575 3.65-4.275 6.375t-6.35 4.3Q28.15 44 24 44Zm0-3q7.1 0 12.05-4.975Q41 31.05 41 24q0-7.1-4.95-12.05Q31.1 7 24 7q-7.05 0-12.025 4.95Q7 16.9 7 24q0 7.05 4.975 12.025Q16.95 41 24 41Zm0-17Z' fill='%23FFF'/%3E%3C/svg%3E");
+}
+
+.app__footer {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px -3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-size: 12px;
+    color: white;
+    background: rgb(37, 38, 42);
+    padding: 10px 15px;
+}
+.app__wrapper {
+    flex: 1 1 0%;
+}
+.app__aside {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(to right bottom, rgb(54, 60, 74), rgb(39, 40, 44));
+}
+.app__display {
+    display: flex;
+    aspect-ratio: 16 / 8;
+    flex: 1 0 0%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+.app__display canvas {
+    margin: 0px auto;
+}
+.uikit__card {
+    display: flex;
+    flex-direction: column;
+    color: rgb(166, 175, 190);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin: 8px 8px 0px;
+    background: linear-gradient(to right top, rgb(54, 60, 74), rgb(39, 40, 46));
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(66, 75, 88);
+    border-image: initial;
+    padding: 8px;
+}
+.uikit__form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+}
+.uikit__card-button {
+    text-align: center;
+    cursor: pointer;
+    border-top: 1px solid rgb(66, 75, 88);
+    padding: 10px;
+    transition: all 0.2s ease 0s;
+}
+.uikit__card-header {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 3px 0;
+    margin-bottom: 5px;
+}
+.uikit__label {
+    font-size: 12px;
+    padding: 0px 5px;
+    margin-top: 3px;
+}
+.uikit__input {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(66, 75, 88);
+    border-image: initial;
+    border-radius: 4px;
+    outline: none;
+}
+.uikit__button {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    color: white;
+    margin: 5px 0px 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(66, 75, 88);
+    background-color: rgb(66, 75, 88);
+    border-image: initial;
+    border-radius: 4px;
+    outline: none;
+    padding: 4px;
+    cursor: pointer;
+}
+.uikit__radiogroup {
+    display: flex;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(66, 75, 88);
+    border-image: initial;
+    margin: 0;
+    border-radius: 4px;
+}
+
+
+.uikit__radio {
+    display: flex;
+    flex: 1 1 0%;
+    border-right: 1px solid rgb(66, 75, 88);
+}
+.uikit__radio:last-child {
+    border-right: 0px none;
+}
+
+
+
+.uikit__radio label {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    font-size: 13px;
+    flex: 1 1 0%;
+    margin: 0px;
+    padding: 4px;
+}
+
+.uikit__radio input {
+    display: none;
+}
+.uikit__radio input:checked + label {
+    background-color: rgb(67, 73, 87);
+    color: white;
+}
+
+.uikit__radio:last-child input:checked + label {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.uikit__radio:first-child input:checked + label {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.footer__text a {
+    color: white;
+}
+.footer__text_warning {
+    color: red;
+}
