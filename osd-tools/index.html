@@ -7,14 +7,16 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;600&display=swap" rel="stylesheet">
-        <link rel='stylesheet' href='./assets/style-jyoub9Yg.css' type='text/css' media='all' />
+        <link rel='stylesheet' href='/assets/style-oxoaIYWd.css' type='text/css' media='all' />
         <title>OSD tools</title>
-		<script type="module" crossorigin src="./assets/index-JFU72vRw.js"></script>
+		<script type="module" crossorigin src="/assets/index-bWXhVL97.js"></script>
 	</head>
 	<body>
         <header class="app__header">
             <div class="app__header-text">OSD tools</div>
             <div class="app__wrapper"></div>
+            
+            <!--<div class="header__button header__button_debug" id="btn_debug"></div>-->
             <div class="header__button header__button_connect" id="connect"></div>
         </header>
 		<div class="app">
@@ -43,6 +45,16 @@
                         <div class="uikit__radiogroup" id="pages"></div>
                     </div>
                 </div>
+                <div class="uikit__card">
+                    <div class="uikit__card-header">Debug</div>
+                    <div class="uikit__form">
+                        <label class="uikit__label">Char codes (one some lines)</label>
+                        <textarea id="inp_text" class="uikit__input" placeholder="65,66,0x43"></textarea>
+                        <input class="uikit__button" id="btn_add_string" type="button" value="Draw">
+                        <input class="uikit__button" id="btn_clear" type="button" value="Clear">
+                        <input class="uikit__button" id="btn_charset" type="button" value="Charaster set">
+                    </div>
+                </div>
                 <!--<div class="uikit__card">
                     <div class="uikit__form">
                         <div class="uikit__form-header">Font library</div>
@@ -51,17 +63,6 @@
                 </div>-->
             </aside>
             <div class="app__display" id="display"></div>
-            <aside class="app__aside">
-                <div class="uikit__card">
-                    <div class="uikit__card-header">Custom text</div>
-                    <div class="uikit__form">
-                        <label class="uikit__label">Chars</label>
-                        <input id="inp_text" placeholder="65, 45, 20">
-                        <input class="uikit__button" id="btn_add_string" type="button" value="Draw chars">
-                        <input class="uikit__button" id="btn_clear" type="button" value="Clear screen">
-                    </div>
-                </div>
-            </aside>
         </div>
         <footer class="app__footer">
             <div class="footer__text">
@@ -69,7 +70,6 @@
             </div>
             <div class="app__wrapper"></div>
             <div class="footer__text footer__text_warning" id="warning"></div>
-        </footer>
-
+        </footer>
 </body>
 </html>
